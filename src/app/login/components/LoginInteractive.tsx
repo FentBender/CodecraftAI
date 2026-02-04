@@ -20,7 +20,7 @@ export default function LoginInteractive() {
     const result = await signIn(email, password);
     
     if (!result.success) {
-      setError(result.error || 'Failed to sign in!');
+      setError(result.error || 'You failed to sign in!');
       setLoading(false);
     }
   };
